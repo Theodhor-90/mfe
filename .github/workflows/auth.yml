@@ -17,9 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install npm packages
-        run: sudo npm install
+        run: npm install
       - name: Build the project
-        run: sudo npm run build
+        run: npm run build
 
       - uses: shinyinc/action-aws-cli@v1.2
       - name: Deploy to AWS
